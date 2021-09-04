@@ -1,0 +1,15 @@
+<div>
+  <h3 class="title">Lista de seleccionados</h3>
+</div>
+<div class="divider"></div>
+<div>
+  <ul class="seleccion-list">
+    <li *ngFor="let lista of listaItems">
+      <div>
+        [{{ lista?.data?.id }}] {{ lista?.data?.name }} [{{
+          lista?.data?.user_id
+        }}]
+      </div>
+    </li>
+  </ul>
+</div>
